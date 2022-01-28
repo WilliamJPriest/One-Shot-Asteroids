@@ -1,0 +1,55 @@
+<!-- William J.Priest Github: https://github.com/WilliamJPriest
+This is the first game I ever created in Vanilla JavaScript, and I'm really proud of it
+but insterested in all suggestions for improvements
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+	<script src="https://use.fontawesome.com/b042b9f677.js"></script>
+    <title>One-Shot Asteroids</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>One-Shot Asteroids</h1>
+            <div class="social-links">
+                <a href="https://github.com/WilliamJPriest" ><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/williamj.priest/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="gameover-container">
+            <h2>Game Over</h2>
+        </div>
+        <div id="score-container">
+            <h2> Score: <span id="score-card">0</span> </h2>
+        </div>
+        <div id="game-container">
+            <div id="asteroid-container">
+                <div class=" asteroid1">O</div>
+                <div class=" asteroid2">O</div>
+                <div class=" asteroid3">O</div>
+            </div>
+            <div id="player">^</div>
+        </div>
+        <div id="rules-container">
+            <ol>
+                <li> Hold "A" to move Left</li>
+                <li> Hold "D" to move Right</li>
+                <li>Press "Space" to Fire</li>
+                <li>If the ship is <span class="red">"Red"</span> it's overheated and won't fire till it turns <span class="green">"Green"</span> so good luck</li>
+                <li>Have Fun and if you wanna show off your high-score @ me on insta:williamj.priest</li>
+            </ol>
+        </div>
+        <div id="button-container">
+            <button id="respawn-BTN">Respawn</button>
+         </div>
+    </main>   
+</body>
+</html>

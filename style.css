@@ -1,0 +1,174 @@
+/* William J.Priest Github: https://github.com/WilliamJPriest
+This is the first game I ever created in Vanilla JavaScript, and I'm really proud of it
+but insterested in all suggestions for improvements */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url("fonts/PressStart2P-Regular.ttf");
+  }
+
+
+html{
+    background-color: black;
+    color:white;
+    height:110%;
+    width:375px;
+    margin: auto;
+}
+
+h1{
+    font-family:"myFont", 'Times New Roman', Times, serif;
+    font-size:1rem;
+    margin: 0 0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+	margin:0.2rem;
+    
+}
+
+a:hover{
+    color: lightgreen;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.social-links{
+	margin:auto;
+	margin-right:0rem;
+	
+}
+
+#gameover-container{
+    display:none;
+    font-family:"myFont",'Times New Roman', Times, serif;
+    width:100%;
+    margin: 2rem 5rem;
+    font-size: 1rem;
+}
+
+
+h2{
+    margin: auto;
+    
+}
+
+#score-container{
+    width:100%;
+    font-family:"myFont",'Times New Roman', Times, serif;
+    margin: 2rem 8rem;
+
+}
+#score-container h2{
+    font-size:0.8rem;
+}
+
+#game-container{
+    display: relative;
+    height: 350px;
+    width: 300px;
+    margin:auto;
+    border: 2px solid white;
+    font-size:2.5rem;
+    
+
+}
+
+#asteroid-container{
+    display: flex;
+}
+
+.asteroid{
+    display:block;
+}
+
+.asteroid1{
+    position: relative;
+    color:red;
+    width:20px;
+
+    
+}
+.asteroid2{
+    position: relative;
+    color:blue;
+    width:20px;
+
+    
+}
+.asteroid3{
+    position: relative;
+    color:green;
+    width:20px;
+
+    
+}
+
+
+.lazer{
+    position: absolute;
+    opacity:1;
+    display: none;
+    color: white;
+    z-index:10;
+    transition: 0.4s;
+}
+
+
+#player{
+    position: relative;
+    top:70%;
+    left:0%;
+    transition: 0.1s;
+    width:10px;
+    color: lightgreen;
+}
+
+#rules-container{
+    margin: 1.5rem 2rem;
+	padding-bottom:1rem;
+}
+li{
+    margin: 0.2rem;
+}
+
+.red{
+	color:red;
+}
+.green{
+	color: lightgreen;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+}
+
+button:hover{
+    background-color: green;
+}
+
+#respawn-BTN{
+    display: none;
+}
+
+#button-container{
+    margin:2rem 9rem;
+}
+
+/* fonts:https://fonts.google.com/specimen/Press%20Start%202P#glyphs */
